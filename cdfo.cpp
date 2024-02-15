@@ -167,29 +167,7 @@ int main() {
         std::cout << "4. Quit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
-
-        switch (choice) {
-            case 1:
-                pet.feed();
-                break;
-            case 2:
-                pet.play();
-                break;
-            case 3:
-                pet.checkStatus();
-                break;
-            case 4:
-                std::cout << "Exiting the Virtual Pet Simulator. Goodbye!\n";
-                break;
-            default:
-                std::cout << "Invalid choice. Please try again.\n";
-                break;
-        }
-    } while (choice != 4);
-
-    return 0;
-}
-
+    }
 
 // for calculating factorials...
 
