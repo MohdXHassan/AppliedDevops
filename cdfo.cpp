@@ -107,21 +107,7 @@ typedef unsigned long long int  uint64;
 //     return a << shift;
 // }
 
-// for returning all the prime factors ......
-// vector<ll>primes(ll n ){
-// vector<ll> ans ;
-// for(int i = 2 ; i * i <= n ; i++ ){
-// 	while(n % i == 0){
-// 		n /= i ;
-// ans.push_back(i) ;
-// }
 
-// }
-// if(n > 1){
-// 	ans.push_back(n) ;
-// }
-// return ans ;	
-// }
 
 
 // Returning prime factor and its count....
