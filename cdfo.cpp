@@ -107,38 +107,7 @@ typedef unsigned long long int  uint64;
 //     return a << shift;
 // }
 
-// for returning all the prime factors ......
-// vector<ll>primes(ll n ){
-// vector<ll> ans ;
-// for(int i = 2 ; i * i <= n ; i++ ){
-// 	while(n % i == 0){
-// 		n /= i ;
-// ans.push_back(i) ;
-// }
 
-// }
-// if(n > 1){
-// 	ans.push_back(n) ;
-// }
-// return ans ;	
-// }
-
-
-// Returning prime factor and its count....
-// map<ll , ll> primes(ll n ){
-// map<ll ,ll >mp ;
-// for(int i = 2 ; i * i <= n ; i++ ){
-// 	while(n % i == 0){
-// 		n /= i ;
-// mp[i]++ ;
-// }
-
-// }
-// if(n > 1){
-// 	mp[n]++ ;
-// }
-// return mp ;	
-// }
 
 // for calculating factorials...
 
@@ -158,9 +127,6 @@ typedef unsigned long long int  uint64;
 // uint64 ncr( int n , int m ){
 // 	return (fact[n] % MOD / (fact[ n - m ] % MOD * fact[m] % MOD) % MOD) ;
 // }
-int add(int a, int b)	{
-return a + b;
-}
 
 
 // Another way to calculate ncr ..........
@@ -1052,6 +1018,9 @@ return a + b;
     // index is 1
     return (arr[row - 1][col - 1] == 1);
 }
+int res ( int a, int b ){
+	return a + b ;
+}
 
 int main() {
 	ios_base::sync_with_stdio(false);
@@ -1062,6 +1031,9 @@ int main() {
    //cin >> T ;
 
   while( T-- ){
+	  int a , b ;
+	  cin >> a >> b ;
+	  cout << res(a,b) << endl ;
 
 }
 	
