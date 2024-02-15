@@ -107,38 +107,67 @@ typedef unsigned long long int  uint64;
 //     return a << shift;
 // }
 
-// for returning all the prime factors ......
-// vector<ll>primes(ll n ){
-// vector<ll> ans ;
-// for(int i = 2 ; i * i <= n ; i++ ){
-// 	while(n % i == 0){
-// 		n /= i ;
-// ans.push_back(i) ;
-// }
-
-// }
-// if(n > 1){
-// 	ans.push_back(n) ;
-// }
-// return ans ;	
-// }
 
 
-// Returning prime factor and its count....
-// map<ll , ll> primes(ll n ){
-// map<ll ,ll >mp ;
-// for(int i = 2 ; i * i <= n ; i++ ){
-// 	while(n % i == 0){
-// 		n /= i ;
-// mp[i]++ ;
-// }
 
-// }
-// if(n > 1){
-// 	mp[n]++ ;
-// }
-// return mp ;	
-// }
+#include <iostream>
+#include <string>
+#include <ctime>
+
+class VirtualPet {
+private:
+    std::string name;
+    int hunger;
+    int happiness;
+
+public:
+    VirtualPet(std::string petName) : name(petName), hunger(50), happiness(50) {}
+
+    void feed() {
+        hunger -= 10;
+        if (hunger < 0) {
+            hunger = 0;
+        }
+        std::cout << name << " happily eats the food. Yummy!\n";
+    }
+
+    void play() {
+        happiness += 10;
+        if (happiness > 100) {
+            happiness = 100;
+        }
+        std::cout << name << " enjoys playing with you. It's having so much fun!\n";
+    }
+
+    void checkStatus() {
+        std::cout << "-------------------------\n";
+        std::cout << name << "'s Status:\n";
+        std::cout << "Hunger: " << hunger << "/100\n";
+        std::cout << "Happiness: " << happiness << "/100\n";
+        std::cout << "-------------------------\n";
+    }
+};
+
+int main() {
+    srand(time(0)); // Seed for random number generation
+
+    std::cout << "Welcome to the Virtual Pet Simulator!\n";
+    std::string petName;
+    std::cout << "Enter your pet's name: ";
+    std::cin >> petName;
+
+    VirtualPet pet(petName);
+
+    int choice;
+    do {
+        std::cout << "\nWhat would you like to do?\n";
+        std::cout << "1. Feed " << petName << "\n";
+        std::cout << "2. Play with " << petName << "\n";
+        std::cout << "3. Check " << petName << "'s status\n";
+        std::cout << "4. Quit\n";
+        std::cout << "Enter your choice: ";
+        std::cin >> choice;
+    }
 
 // for calculating factorials...
 
