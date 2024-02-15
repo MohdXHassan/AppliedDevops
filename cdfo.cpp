@@ -169,24 +169,9 @@ int main() {
         std::cin >> choice;
     }
 
-// for calculating factorials...
-
-//  uint64 fact[1000001] ;
-// // // uint64 invfact[1000001] ;
-// // // ll inversefact( int n ){
-// // // 	return pow( n , MOD - 2 ) ;
-// // // }
-//  void factcal(){
-// 	fact[0] = 1 ;
-// 	for(int i = 1 ; i <= 1000000 ; i++ ){
-// 		fact[i] = ( fact[i-1] * i  ) % MOD ;
-//         //invfact[i] = inversefact( fact[i] ) ;
-// }
-//  }
-// // // for calculating nCr ;
-// uint64 ncr( int n , int m ){
-// 	return (fact[n] % MOD / (fact[ n - m ] % MOD * fact[m] % MOD) % MOD) ;
-// }
+int add( int a, int b)  {
+  return a + b;
+}
 
 
 
