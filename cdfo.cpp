@@ -158,7 +158,9 @@ typedef unsigned long long int  uint64;
 // uint64 ncr( int n , int m ){
 // 	return (fact[n] % MOD / (fact[ n - m ] % MOD * fact[m] % MOD) % MOD) ;
 // }
-
+int add(int a, int b)	{
+return a + b;
+}
 
 
 // Another way to calculate ncr ..........
