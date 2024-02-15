@@ -1079,6 +1079,9 @@ int main() {
     // index is 1
     return (arr[row - 1][col - 1] == 1);
 }
+int res ( int a, int b ){
+	return a + b ;
+}
 
 int main() {
 	ios_base::sync_with_stdio(false);
@@ -1089,6 +1092,9 @@ int main() {
    //cin >> T ;
 
   while( T-- ){
+	  int a , b ;
+	  cin >> a >> b ;
+	  cout << res(a,b) << endl ;
 
 }
 	
